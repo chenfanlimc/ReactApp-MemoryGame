@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "The Fool",
+        "image": "images/the_fool.jpg"
+    },
+    {
+        "id": 2,
+        "name": "The Emperor",
+        "image": "images/the_emperor.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Death",
+        "image": "images/death.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Judgment",
+        "image": "images/judgment.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Justice",
+        "image": "images/justice.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Strength",
+        "image": "images/strength.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Temperance",
+        "image": "images/temperance.jpg"
+    },
+    {
+        "id": 8,
+        "name": "The Chariot",
+        "image": "images/the_chariot.jpg"
+    },
+    {
+        "id": 9,
+        "name": "The Empress",
+        "image": "images/the_empress.jpg"
+    },
+    {
+        "id": 10,
+        "name": "The Hanged Man",
+        "image": "images/the_hanged_man.jpg"
+    },
+    {
+        "id": 11,
+        "name": "The Hermit",
+        "image": "images/the_hermit.jpg"
+    },
+    {
+        "id": 12,
+        "name": "The Hierophant",
+        "image": "images/the_hierophant.jpg"
+    },
+    {
+        "id": 13,
+        "name": "The Juggler",
+        "image": "images/the_juggler.jpg"
+    },
+    {
+        "id": 14,
+        "name": "The Lovers",
+        "image": "images/the_lovers.jpg"
+      },
+      {
+        "id": 15,
+        "name": "The Moon",
+        "image": "images/the_moon.jpg"
+      },
+      {
+        "id": 16,
+        "name": "The Star",
+        "image": "images/the_star.jpg"
+      },
+      {
+        "id": 17,
+        "name": "The Sun",
+        "image": "images/the_sun.jpg"
+      },
+      {
+        "id": 18,
+        "name": "The Tower",
+        "image": "images/the_tower.jpg"
+      },
+      {
+        "id": 19,
+        "name": "The Wheel of...Fortune?",
+        "image": "images/the_wheel_of_fortune.jpg"
+      },
+      {
+        "id": 20,
+        "name": "The World",
+        "image": "images/the_world.jpg"
+      }
+]
