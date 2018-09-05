@@ -1,24 +1,34 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import Wrapper from './components/Wrapper';
 import GameSelect from './components/GameSelect';
 import NavBar from './components/NavBar';
 import gameItems from "./gameItems.json";
-// import TitleContent from './components/TitleContent';
-// import Footer from './components/Footer';
+import TitleContent from './components/TitleContent';
+import Footer from './components/Footer';
 
 
 class App extends Component {
+
     state = {
         gameItems,
         score: 0,
         topScore: 0,
         resultText: ""
-
     };
 
+    shuffle = (array) => {
+        for (var i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
     resetItem = () => {
+        this.shuffle(this.state.gameItems);
         let updatedState = this.state.gameItems.map(gameItem => {
             gameItem.selected = false;
             return gameItem;
@@ -50,7 +60,8 @@ class App extends Component {
     addScore = () => {
         this.setState({ score: this.state.score + 1 });
         if (this.state.score === this.state.topScore) { this.setState({ topScore: this.state.topScore + 1 }) };
-
+        this.shuffle(this.state.gameItems);
+        this.setState({ gameItems: this.state.gameItems });
         this.displayResult("Congrats, you guessed correctly.");
     }
 
@@ -66,24 +77,17 @@ class App extends Component {
     }
 
     render() {
+        let shuffledItems = this.shuffle(this.state.gameItems)
         return (
             <Wrapper>
-                {/* <div className="App">
-                        <header className="App-header">
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <h1 className="App-title">Welcome to React</h1>
-                        </header>
-                        <p className="App-intro">
-                            To get started, edit <code>src/App.js</code> and save to reload.
-                        </p>
-                </div> */}
+
                 <NavBar
                     resultText={this.state.resultText}
                     score={this.state.score}
                     topScore={this.state.topScore}
                 />
-                {/* <TitleContent /> */}
-                {this.state.gameItems.map(gameItem => (
+                <TitleContent />
+                {shuffledItems.map(gameItem => (
                     <GameSelect
                         selectItem={this.selectItem}
                         id={gameItem.id}
@@ -93,7 +97,7 @@ class App extends Component {
                         selected={gameItem.selected}
                     />
                 ))}
-                {/* <Footer /> */}
+                <Footer />
 
             </Wrapper>
         );

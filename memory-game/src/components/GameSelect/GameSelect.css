@@ -33,16 +33,11 @@
     margin-top: 18px;
   }
   
-  .card > .remove {
-    color: #ff1744;
-    font-size: 48px;
-    position: absolute;
-    top: -20px;
-    right: 5px;
-    cursor: pointer;
+  .select-card{
+    transition: 0.3s ease;
   }
-  
-  .card > .remove:hover {
-    color: #d50000;
+
+  .select-card:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 10px #888888;
   }
-  

@@ -82,41 +82,47 @@
         "name": "The Lovers",
         "image": "images/the_lovers.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 15,
         "name": "The Moon",
         "image": "images/the_moon.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 16,
         "name": "The Star",
         "image": "images/the_star.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 17,
         "name": "The Sun",
         "image": "images/the_sun.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 18,
         "name": "The Tower",
         "image": "images/the_tower.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 19,
         "name": "The Wheel of...Fortune?",
         "image": "images/the_wheel_of_fortune.jpg",
         "selected": false
-      },
-      {
+    },
+    {
         "id": 20,
         "name": "The World",
         "image": "images/the_world.jpg",
         "selected": false
-      }
+    },
+    {
+        "id": 21,
+        "name": "The Devil",
+        "image": "images/the_devil.jpg",
+        "selected": false
+    }
 ]
