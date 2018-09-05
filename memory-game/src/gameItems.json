@@ -2,101 +2,121 @@
     {
         "id": 1,
         "name": "The Fool",
-        "image": "images/the_fool.jpg"
+        "image": "images/the_fool.jpg",
+        "selected": false
     },
     {
         "id": 2,
         "name": "The Emperor",
-        "image": "images/the_emperor.jpg"
+        "image": "images/the_emperor.jpg",
+        "selected": false
     },
     {
         "id": 3,
         "name": "Death",
-        "image": "images/death.jpg"
+        "image": "images/death.jpg",
+        "selected": false
     },
     {
         "id": 4,
         "name": "Judgment",
-        "image": "images/judgment.jpg"
+        "image": "images/judgment.jpg",
+        "selected": false
     },
     {
         "id": 5,
         "name": "Justice",
-        "image": "images/justice.jpg"
+        "image": "images/justice.jpg",
+        "selected": false
     },
     {
         "id": 6,
         "name": "Strength",
-        "image": "images/strength.jpg"
+        "image": "images/strength.jpg",
+        "selected": false
     },
     {
         "id": 7,
         "name": "Temperance",
-        "image": "images/temperance.jpg"
+        "image": "images/temperance.jpg",
+        "selected": false
     },
     {
         "id": 8,
         "name": "The Chariot",
-        "image": "images/the_chariot.jpg"
+        "image": "images/the_chariot.jpg",
+        "selected": false
     },
     {
         "id": 9,
         "name": "The Empress",
-        "image": "images/the_empress.jpg"
+        "image": "images/the_empress.jpg",
+        "selected": false
     },
     {
         "id": 10,
         "name": "The Hanged Man",
-        "image": "images/the_hanged_man.jpg"
+        "image": "images/the_hanged_man.jpg",
+        "selected": false
     },
     {
         "id": 11,
         "name": "The Hermit",
-        "image": "images/the_hermit.jpg"
+        "image": "images/the_hermit.jpg",
+        "selected": false
     },
     {
         "id": 12,
         "name": "The Hierophant",
-        "image": "images/the_hierophant.jpg"
+        "image": "images/the_hierophant.jpg",
+        "selected": false
     },
     {
         "id": 13,
         "name": "The Juggler",
-        "image": "images/the_juggler.jpg"
+        "image": "images/the_juggler.jpg",
+        "selected": false
     },
     {
         "id": 14,
         "name": "The Lovers",
-        "image": "images/the_lovers.jpg"
+        "image": "images/the_lovers.jpg",
+        "selected": false
       },
       {
         "id": 15,
         "name": "The Moon",
-        "image": "images/the_moon.jpg"
+        "image": "images/the_moon.jpg",
+        "selected": false
       },
       {
         "id": 16,
         "name": "The Star",
-        "image": "images/the_star.jpg"
+        "image": "images/the_star.jpg",
+        "selected": false
       },
       {
         "id": 17,
         "name": "The Sun",
-        "image": "images/the_sun.jpg"
+        "image": "images/the_sun.jpg",
+        "selected": false
       },
       {
         "id": 18,
         "name": "The Tower",
-        "image": "images/the_tower.jpg"
+        "image": "images/the_tower.jpg",
+        "selected": false
       },
       {
         "id": 19,
         "name": "The Wheel of...Fortune?",
-        "image": "images/the_wheel_of_fortune.jpg"
+        "image": "images/the_wheel_of_fortune.jpg",
+        "selected": false
       },
       {
         "id": 20,
         "name": "The World",
-        "image": "images/the_world.jpg"
+        "image": "images/the_world.jpg",
+        "selected": false
       }
 ]
