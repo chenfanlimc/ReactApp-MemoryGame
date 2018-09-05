@@ -8,13 +8,23 @@ import gameItems from "./gameItems.json";
 // import TitleContent from './components/TitleContent';
 // import Footer from './components/Footer';
 
+
 class App extends Component {
     state = {
         gameItems,
         score: 0,
-        topScore: 0
+        topScore: 0,
+        resultText: ""
 
     };
+
+    resetItem = () => {
+        let updatedState = this.state.gameItems.map(gameItem => {
+            gameItem.selected = false;
+            return gameItem;
+        });
+        this.setState({ gameItems: updatedState })
+    }
 
     selectItem = id => {
         //Check if selected item's id has already been selected
@@ -39,26 +49,20 @@ class App extends Component {
 
     addScore = () => {
         this.setState({ score: this.state.score + 1 });
-        this.setState({ topScore: this.state.topScore + 1 });
-        this.displayResult(true, true);
+        if (this.state.score === this.state.topScore) { this.setState({ topScore: this.state.topScore + 1 }) };
+
+        this.displayResult("Congrats, you guessed correctly.");
     }
 
     endGame = () => {
         this.setState({ score: 0 });
-        this.setState({ topScore: 0 });
-        this.displayResult(false, true);
+        if (this.state.score > this.state.topScore) { this.setState({ topScore: this.state.score }) }
+        this.resetItem();
+        this.displayResult("It looks like you messed up. Game over.");
     }
 
-    displayResult = (correctSelect, gameStart = false) => {
-        console.log(correctSelect);
-        console.log(gameStart);
-        if (correctSelect && gameStart) {
-            return ("Congrats, you guessed correctly");
-        } else if (gameStart) {
-            return ("It looks like you messed up. Game over.");
-        } else {
-            console.log("nothing at all")
-        }
+    displayResult = (returnMsg) => {
+        return (this.setState({ resultText: returnMsg }))
     }
 
     render() {
@@ -74,7 +78,7 @@ class App extends Component {
                         </p>
                 </div> */}
                 <NavBar
-                    resultText={this.displayResult()}
+                    resultText={this.state.resultText}
                     score={this.state.score}
                     topScore={this.state.topScore}
                 />
